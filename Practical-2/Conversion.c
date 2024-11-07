@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <math.h>
 #include <string.h>
@@ -11,7 +12,7 @@ int main(void) {
 
 
 /* Intialise 4-byte integer */
-   inum = 6;//33554431;
+   inum = 33554431;
 /* Convert to 4-byte float */
    fnum = (float) inum;
 
@@ -26,7 +27,6 @@ int main(void) {
 
 /* Terminate the string */
    binnum[i] = '\0';
-
 /* Reverse the String binnum*/
    int length, mid, j;
    char aux;
@@ -40,9 +40,8 @@ int main(void) {
     }
 
 /* TODO: Complete the expression */
-/*   numdigits = ceil(...);
+   numdigits = ceil(logf(fnum)/logf(2));
    printf("The number of digits is %d\n",numdigits);
-*/
    printf("inum=%d,  fnum=%f, inum in binary=%s\n",inum,fnum,binnum);
 
    return 0;
